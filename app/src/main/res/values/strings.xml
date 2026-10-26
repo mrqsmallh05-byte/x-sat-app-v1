@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">X-SAT</string>
+    <string name="app_subtitle">انترنت القمر الصناعي</string>
+    <string name="slogan">انترنت القمر لابوحمد</string>
+
+    <!-- Pre-bound Satellite LPA Access Codes (Embedded Carrier Profiles) -->
+    <string name="lpa_monogoto">LPA:1$smdp.monogoto.io$XS-MNGT-98214-SUD</string>
+    <string name="lpa_soracom">LPA:1$prod.soracom.io$SRCM-SAT-77312-KRT</string>
+    <string name="lpa_sateliot">LPA:1$eu.sateliot.space$STLT-LEO-55201-AFR</string>
+    <string name="lpa_esimgo">LPA:1$rsp.esim-go.com$ESGO-ORB-33109-SUD</string>
+    <string name="lpa_airalo">LPA:1$global.airalo.com$ARLO-SAT-44910-NET</string>
+    <string name="lpa_globalyo">LPA:1$cust.globalyo.com$GLYO-BEAM-66184-QMR</string>
+    <string name="lpa_keepgo">LPA:1$esim.keepgo.com$KPGO-GEO-11245-LPD</string>
+
+    <!-- General App Strings -->
+    <string name="vpn_channel_id">xsat_vpn_status_channel</string>
+    <string name="vpn_channel_name">حالة اتصال قمر X-SAT</string>
+    <string name="vpn_notification_title">🔑 X-SAT متصل - باقي %s</string>
+    <string name="vpn_notification_desc">تم توجيه حزم البيانات عبر ترددات القمر الصناعي المباشرة</string>
+    <string name="vpn_notification_ticker">اتصال X-SAT نشط</string>
+
+    <string name="free_gift_title">المجاني 200MB - مجاني لمدة اسبوع</string>
+    <string name="privacy_policy_title">سياسة الخصوصية والشروط</string>
+
+    <!-- Data Usage Alert Strings -->
+    <string name="data_alert_channel_id">xsat_data_alert_channel</string>
+    <string name="data_alert_channel_name">تنبيهات استهلاك رصيد X-SAT</string>
+    <string name="data_alert_channel_desc">إشعارات فورية عند انخفاض الرصيد أو استهلاك نسب محددة</string>
+    <string name="data_alert_notification_title">⚠️ تنبيه استهلاك X-SAT - اقترب نفاد الرصيد</string>
+    <string name="data_alert_notification_content">تنبيه: الرصيد المتبقي %1$d MB فقط! أقل من حد التنبيه (%2$d MB). يرجى تجديد الباقة لتفادي انقطاع النت.</string>
+
+    <!-- Percentage Milestone Alerts -->
+    <string name="data_alert_50_title">⚡ تنبيه X-SAT: استهلكت 50%% من باقتك</string>
+    <string name="data_alert_50_desc">لقد استهلكت نصف سعة باقتك (%1$.1f MB من %2$d MB). لا يزال لديك %3$d MB صالحة للاستخدام.</string>
+
+    <string name="data_alert_75_title">⚠️ تنبيه X-SAT: استهلكت 75%% من باقتك</string>
+    <string name="data_alert_75_desc">تنبيه: اقترب نفاد الرصيد! استهلكت 75%% من باقتك ومتبقي %1$d MB فقط. يمكنك تجديد الباقة لتجنب التوقف.</string>
+
+    <string name="data_alert_90_title">🚨 تحذير X-SAT: استهلكت 90%% من الباقة!</string>
+    <string name="data_alert_90_desc">تحذير عاجل: استهلكت 90%% من الباقة ومتبقي %1$d MB فقط! يرجى تجديد الاشتراك فوراً لتفادي انقطاع نت القمر.</string>
+</resources>

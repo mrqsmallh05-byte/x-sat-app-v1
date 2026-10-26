@@ -1,0 +1,6 @@
+{
+  "name": "X-SAT",
+  "description": "انترنت القمر الصناعي - باقات إنترنت مجانية ومسبقة الدفع بدون خدمات جوجل",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
