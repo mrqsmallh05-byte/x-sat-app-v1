@@ -1,4 +1,4 @@
-name: Build APK
+github.com/mrqsmallh05-byte/x-sat-app-v1/edit/main/.github/workflows/build.ymlname: Build APK
 on: [push]
 jobs:
   build:
