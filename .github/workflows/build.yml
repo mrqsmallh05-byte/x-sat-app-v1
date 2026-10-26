@@ -1,20 +1,33 @@
-github.com/mrqsmallh05-byte/x-sat-app-v1/edit/main/.github/workflows/build.ymlname: Build APK
+name: Build APK
 on: [push]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-java@v3
+      - uses: actions/checkout@v4
+      
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '17'
+          
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v3
+        
+      - name: Make gradlew executable
+        run: |
+          ls -la
+          chmod +x ./gradlew || chmod +x app/gradlew || echo "no gradlew"
+          
       - name: Build APK
         run: |
-          chmod +x gradlew
-          ./gradlew assembleDebug
+          if [ -f "./gradlew" ]; then ./gradlew assembleDebug; else cd app && ../gradlew assembleDebug || ./gradlew assembleDebug; fi
+          
       - name: Upload APK
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: X-SAT-APK
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: |
+            app/build/outputs/apk/debug/*.apk
+            **/build/outputs/apk/debug/*.apk
